@@ -38,6 +38,7 @@ Thumbs.db
 
 #SPRINGBOOT SIDE OF THE PROJECT
 
+Springboot-Portfolio-Project/.metadata
 Springboot-Portfolio-Project/HELP.md
 Springboot-Portfolio-Project/target/
 !.mvn/wrapper/maven-wrapper.jar
