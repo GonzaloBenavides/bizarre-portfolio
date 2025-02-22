@@ -1,0 +1,19 @@
+nav {
+    background-color: #4A628A !important;
+    border-radius: 0px 0px 50px 50px;
+    padding: 0px 0px 0px 40px;
+}
+
+.nav-link,
+.navbar-brand {
+    padding: 10px;
+    color: aliceblue;
+}
+
+.navbar-brand {
+    width: 10%;
+    border-radius: 0px 0px 0px 50px;
+    margin-left: -52px;
+    margin-right: 0px;
+    padding-left: 57px;
+}

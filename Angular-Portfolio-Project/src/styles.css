@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #DFF2EB;
+}
+
+.wrap{
+    padding-top: 3rem;
+}
+
+app-root{
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #DFF2EB;
+}
+
+.header {
+    vertical-align: top;
+    padding: 0px;
+}
+
+.footer {
+    border-radius: 50px 50px 0px 0px;
+    vertical-align: bottom;
+    font-size: x-small;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: #4A628A;
+    color: aliceblue;
+    margin-top: auto;
+}
+
+.btn-primary {
+    background-color: #174da7;
+}
+
+.hoverBlue:hover {
+    background-color: #5885b6 !important;
+}
+
+.hoverBlue:active {
+    background-color: #358be7 !important;
+}
+
+.noBtn{
+    background: none;
+    border: none;
+}

@@ -1,0 +1,18 @@
+@keyframes throw {
+    0% { 
+        transform: scale(0.5);       
+    }
+    10% {
+        transform : rotate(-90deg) translate(-5%, -5%);
+    }
+    55% {
+        transform : rotate(180deg) translate(10%, 10%);
+    }
+    100%{
+        transform : rotate(-90deg) translate(-5%, -5%);
+    }
+}
+
+.dice {
+    position: absolute;
+}

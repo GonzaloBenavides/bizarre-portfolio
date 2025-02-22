@@ -1,0 +1,30 @@
+<header class="container-sm header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="hoverBlue navbar-brand" href="/"><i class="fas fa-house"></i></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li *ngFor="let item of dropdownItem" class="nav-item" routerLinkActive="active">
+                        <a class="hoverBlue nav-link {{item.activo}}" routerLink="/{{item.route}}" aria-current="page"
+                            href="#">{{item.name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 
+    <div>
+        <div class="btn-group dropdown-center">
+            <button type="button" class="btn btn-primary"> <i class="fas fa-house"></i> </button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+            <ul class="dropdown-menu">
+                
+                <li *ngFor="let item of dropdownItem"> 
+                    <a class="hoverBlue dropdown-item {{item.activo}}"> {{item.name}} </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    -->
+</header>

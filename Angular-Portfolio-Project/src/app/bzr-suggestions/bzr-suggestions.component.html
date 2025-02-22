@@ -1,0 +1,80 @@
+<h1>Suggestions Box</h1>
+
+
+<div class="container">
+    <p>If you have any idea for me to test, implement or try please do tell me through this form!</p>
+    <p>Below please add your full name so I can know whose idea it is, an email so I can contact you if I ever implement
+        it and finally your idea in the box!</p>
+
+
+    <div>
+
+        <form #suggestForm="ngForm">
+            <div class="form-group row">
+                <div class="form-group col">
+                    <label for="fullName" class="col-form-label col-sm-2">Full Name<i class="required">*</i></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="suggest.user.fullName" #fullName="ngModel"
+                            name="fullName" placeholder="Full name" required minlength="6" />
+                        <div class="alert alert-danger"
+                            *ngIf="fullName.invalid && (fullName.touched)">
+                            <div *ngIf="fullName.hasError('required')">
+                                Full name required
+                            </div>
+                            <div *ngIf="fullName.hasError('minlength')">
+                                At least 6 characters
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="form-group col">
+                    <label for="email" class="col-form-label col-sm-2">E-Mail<i class="required">*</i></label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" [(ngModel)]="suggest.user.email" #email="ngModel"
+                            name="email" placeholder="youremail@somedomain.com" required email>
+                        <div class="alert alert-danger" *ngIf="email.invalid && (email.touched)">
+                            <div *ngIf="email.hasError('required')">
+                                Email required
+                            </div>
+                            <div *ngIf="email.hasError('email')">
+                                Email format is invalid
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="form-group col">
+                    <label for="suggestionText" class="col-form-label col-sm-2">Describe your suggestion<i
+                            class="required">*</i></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="suggest.suggestionText"
+                            name="suggestionText" placeholder="Your idea goes here" #suggestionText="ngModel" required
+                            minlength="10" />
+                            <div class="alert alert-danger"
+                                *ngIf="suggestionText.invalid && (suggestionText.touched)">
+                                <div *ngIf="suggestionText.hasError('required')">
+                                    Suggestion required
+                                </div>
+                                <div *ngIf="suggestionText.hasError('minlength')">
+                                    At least 10 characters
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" (click)='add()'
+                        [disabled]="!suggestForm.form.valid">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
