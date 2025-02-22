@@ -1,3 +1,6 @@
 .metadata/*
 *.bak
 Angular-Portfolio-Project/node_modules/*
+Angular-Portfolio-Project/.angular/*
+Angular-Portfolio-Project/.vscode/*
+
