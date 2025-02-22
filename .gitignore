@@ -1,6 +1,39 @@
 .metadata/*
 *.bak
-Angular-Portfolio-Project/node_modules/*
-Angular-Portfolio-Project/.angular/*
-Angular-Portfolio-Project/.vscode/*
 
+#ANGULAR SIDE OF THE PROJECT
+
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Compiled output
+Angular-Portfolio-Project/dist
+Angular-Portfolio-Project/tmp
+Angular-Portfolio-Project/out-tsc
+Angular-Portfolio-Project/bazel-out
+# Node
+Angular-Portfolio-Project/node_modules
+Angular-Portfolio-Project/npm-debug.log
+Angular-Portfolio-Project/yarn-error.log
+
+# Visual Studio Code
+Angular-Portfolio-Project/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+Angular-Portfolio-Project/.history/*
+
+# Miscellaneous
+Angular-Portfolio-Project/.angular/cache
+Angular-Portfolio-Project/.sass-cache/
+Angular-Portfolio-Project/connect.lock
+Angular-Portfolio-Project/coverage
+Angular-Portfolio-Project/libpeerconnection.log
+Angular-Portfolio-Project/testem.log
+Angular-Portfolio-Project/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+#SPRINGBOOT SIDE OF THE PROJECT
