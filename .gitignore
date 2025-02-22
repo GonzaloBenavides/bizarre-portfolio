@@ -37,3 +37,21 @@ Thumbs.db
 
 
 #SPRINGBOOT SIDE OF THE PROJECT
+
+Springboot-Portfolio-Project/HELP.md
+Springboot-Portfolio-Project/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+Springboot-Portfolio-Project/.apt_generated
+Springboot-Portfolio-Project/.classpath
+Springboot-Portfolio-Project/.factorypath
+Springboot-Portfolio-Project/.project
+Springboot-Portfolio-Project/.settings
+Springboot-Portfolio-Project/.springBeans
+Springboot-Portfolio-Project/.sts4-cache
+
+### VS Code ###
+Springboot-Portfolio-Project/.vscode/
